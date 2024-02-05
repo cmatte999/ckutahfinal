@@ -1753,3 +1753,26 @@ section {
 .navbar a:hover, .navbar .active, .navbar li:hover > a {
   color: #ddd; /* Lighten the text color slightly on hover for a subtle effect */
 }
+/* Existing styles */
+.service {
+  text-align: center;
+  margin: 10px;
+  flex-basis: 22%; /* Adjust the width of each box */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Simple shadow for depth */
+  border-radius: 10px; /* Rounded corners */
+  background: white; /* White background */
+  padding: 10px;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .services-container {
+      flex-direction: column;
+      align-items: stretch;
+  }
+  .service {
+      flex-basis: auto; /* Allow boxes to fill the container */
+      width: 100%; /* Make each service box full width */
+      margin: 10px 0; /* Adjust margin for vertical layout */
+  }
+}
